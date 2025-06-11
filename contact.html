@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Sagar Niroula</title>
+    <link rel="stylesheet" href="styles-contact.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Dev!</h2>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/certifications.html">Certifications</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Contact Me</h1>
+      <form action="https://formsubmit.co/el/teroto" method="POST">
+        <input type="hidden" name="_captcha" value="true" />
+        <input type="hidden" name="_next" value="/contact.html" />
+
+        <label for="name">Your Name</label>
+        <input type="text" name="name" id="name" required />
+
+        <label for="email">Your Email</label>
+        <input type="email" name="email" id="email" required />
+
+        <label for="subject">Subject</label>
+        <input type="text" name="subject" id="subject" required />
+
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="6" required></textarea>
+
+        <div class="button-container">
+          <button type="submit">Send Message</button>
+          <span id="tick" class="success-tick">&#10004;</span>
+        </div>
+      </form>
+    </main>
+
+    <style>
+      .button-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 1rem;
+      }
+
+      .success-tick {
+        color: green;
+        font-size: 1.5rem;
+        display: none;
+        animation: fadeIn 0.5s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    </style>
+
+    <script>
+      if (window.location.search.includes("sent=true")) {
+        document.getElementById("tick").style.display = "inline";
+      }
+    </script>
+  </body>
+</html>

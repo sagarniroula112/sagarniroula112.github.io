@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+* {
+  margin: 8px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Neue";
+}
+
+body {
+  background-color: rgb(248, 244, 255);
+  /* height: 100vh; */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 30px;
+  /* color: purple; */
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  margin-right: 35px;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 21px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: purple;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* .project-cards {
+  display: flex;
+  margin: 20px;
+} */
+
+.projects-main {
+  /* height: 45vh; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  align-items: center;
+  gap: 15px;
+  /* justify-content: center; */
+}
+
+.ongoing {
+  display: flex;
+  padding: 0px 20px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  width: 90vw;
+  height: 7vh;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.completed {
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  width: 90vw;
+  height: 7vh;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.mark {
+  font-size: 35px;
+}
+
+/* .ongoing-section {
+  font-size: 18px;
+  display: flex;
+  gap: 20px;
+  width: 90vw;
+  background-color: rgb(251, 240, 251);
+}
+
+.completed-section {
+  font-size: 18px;
+  display: flex;
+  gap: 20px;
+  width: 90vw;
+  background-color: rgb(251, 240, 251);
+} */
+
+.ongoing-section,
+.completed-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  width: 90vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(251, 240, 251);
+}
+
+.project {
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  text-align: center;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project h4 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.project p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.project button {
+  background-color: purple;
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project button a {
+  text-decoration: none;
+  color: white;
+}
+
+.project button:hover {
+  background-color: #5a0073;
+}
+
+/* .sidebar {
+  width: 15vw;
+}
+
+.sidebar p {
+  font-size: 20px;
+  border: 1px solid black;
+  padding: 5px 8px;
+  background-color: rgb(251, 240, 251);
+} */
+
+/* .projects {
+  margin-top: 32vh;
+  display: flex;
+  width: 85vw;
+  /* border: 1px solid black; */
+/* height: 80vh;
+}
+
+.project {
+  background-color: rgb(251, 240, 251);
+} */
+
+/* .ongoing-projects h3 {
+  font-size: 30px;
+}
+
+.completed-projects h3 {
+  font-size: 30px;
+} */

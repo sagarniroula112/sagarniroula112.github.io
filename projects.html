@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Sagar Niroula</title>
+    <link rel="stylesheet" href="styles-projects.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Dev!</h2>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/certifications.html">Certifications</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="projects-main">
+      <div class="ongoing">
+        <span>Ongoing Projects</span><span class="mark">+</span>
+      </div>
+      <div class="ongoing-section">
+        <div class="project">
+          <img
+            src="/stockpile.png"
+            height="150px"
+            alt="StockpileX Project Image"
+          />
+          <div class="project-content">
+            <h4>StockpileX: An Inventory Management System</h4>
+            <p>
+              Comprehensive inventory management solution designed to streamline
+              stock tracking and warehouse operations.
+            </p>
+            <button>
+              <a href="#" class="source-button" target="_blank">Source Code</a>
+            </button>
+          </div>
+        </div>
+
+        <div class="project">
+          <img
+            src="/socialmediarest.png"
+            height="132px"
+            alt="Social Media REST API Project Image"
+          />
+          <div class="project-content">
+            <h4>Social Media Rest API</h4>
+            <p>
+              Backend API for social media features including user posts,
+              comments, likes, and real-time interactions.
+            </p>
+            <button disabled>
+              <a href="#" class="source-button" target="_blank">Source Code</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="completed">
+        <span>Completed Projects</span><span class="mark">-</span>
+      </div>
+      <div class="completed-section">
+        <div class="project">
+          <img
+            src="/digitaldeals.png"
+            height="120px"
+            alt="Digital Deals Project
+          Image"
+          />
+          <div class="project-content">
+            <h4>Digital Deals: An Ecommerce Platform</h4>
+            <p>
+              Full-stack platform with user auth and admin/user role handling
+              using Java, Spring Boot, Thymeleaf, and MySQL.
+            </p>
+            <button>
+              <a
+                href="https://github.com/sagarniroula112/SpringMVC--DigitalDealsApp"
+                class="source-button"
+                target="_blank"
+                >Source Code</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="project">
+          <img
+            src="/ecommercerest.png"
+            alt="Ecommerce REST API Project Image"
+            height="150px"
+          />
+          <div class="project-content">
+            <h4>Ecommerce REST API</h4>
+            <p>
+              Backend API for shopping cart, orders, and inventory. Built with
+              Spring Boot, MySQL, Swagger UI, and session auth.
+            </p>
+            <button>
+              <a
+                href="https://github.com/sagarniroula112/Spring-EcommerceAPI"
+                class="source-button"
+                target="_blank"
+                >Source Code</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="project">
+          <img
+            src="/movieexplorer.png"
+            height="150px"
+            width="250px"
+            alt="Movie Explorer App Image"
+          />
+          <div class="project-content">
+            <h4>Movie Explorer App</h4>
+            <p>
+              React.js app to browse and rate movies with category filtering.
+              Backend powered by Prisma ORM and MySQL.
+            </p>
+            <button>
+              <a
+                href="https://github.com/sagarniroula112/REM--Movie-Explorer"
+                class="source-button"
+                target="_blank"
+                >Source Code</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="project">
+          <img src="/quickmart.png" height="150px" alt="Quick Mart App Image" />
+          <div class="project-content">
+            <h4>Quick Mart App</h4>
+            <p>
+              Java Swing desktop app for small shops. Features include billing,
+              inventory management, and clean GUI.
+            </p>
+            <button>
+              <a
+                href="https://github.com/sagarniroula112/Java-MartAppUsingSwingUI"
+                class="source-button"
+                target="_blank"
+                >Source Code</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="sidebar">
+        <p>Ongoing Projects</p>
+        <p>Completed Projects</p>
+      </div>
+
+      <div class="projects">
+        <div class="project">
+          <h3>Surakshit Web</h3>
+        </div>
+      </div> -->
+    </main>
+
+    <script>
+      // Get elements
+      // Get elements
+      const ongoingHeader = document.querySelector(".ongoing");
+      const completedHeader = document.querySelector(".completed");
+      const ongoingSection = document.querySelector(".ongoing-section");
+      const completedSection = document.querySelector(".completed-section");
+
+      // Hide sections by default (optional)
+      ongoingSection.style.display = "none";
+      completedSection.style.display = "flex";
+
+      // Function to toggle symbol between + and -
+      function toggleSymbol(element) {
+        const mark = element.querySelector(".mark");
+        if (mark.textContent === "+") {
+          mark.textContent = "-";
+        } else {
+          mark.textContent = "+";
+        }
+      }
+
+      // Toggle ongoing projects section and symbol
+      ongoingHeader.addEventListener("click", () => {
+        const isVisible = ongoingSection.style.display === "flex";
+        ongoingSection.style.display = isVisible ? "none" : "flex";
+        toggleSymbol(ongoingHeader);
+      });
+
+      // Toggle completed projects section and symbol
+      completedHeader.addEventListener("click", () => {
+        const isVisible = completedSection.style.display === "flex";
+        completedSection.style.display = isVisible ? "none" : "flex";
+        toggleSymbol(completedHeader);
+      });
+    </script>
+  </body>
+</html>

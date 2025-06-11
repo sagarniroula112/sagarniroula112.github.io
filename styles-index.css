@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+* {
+  margin: 8px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Neue";
+}
+
+body {
+  background-color: rgb(248, 244, 255);
+  /* height: 100vh; */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 30px;
+  /* color: purple; */
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+  margin-right: 35px;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 21px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  color: purple;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 25px;
+}
+
+main img {
+  /* width: 500px;   */
+  border-radius: 700px;
+  height: 500px;
+}
+
+main .hi {
+  font-size: 25px;
+  /* margin-bottom: 0px; */
+}
+
+main .name {
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+main .info {
+  margin-top: 0;
+  font-size: 25px;
+}
+
+main .socials {
+  margin-top: 40px;
+}
+
+.linkedin {
+  text-decoration: none;
+  background-color: rgb(246, 231, 246);
+  padding: 3px;
+  color: black;
+}
+
+.github {
+  text-decoration: none;
+  background-color: rgb(246, 231, 246);
+  padding: 4px 7px;
+  color: black;
+}
+
+.facebook {
+  text-decoration: none;
+  background-color: rgb(246, 231, 246);
+  padding: 3px;
+  color: black;
+}
