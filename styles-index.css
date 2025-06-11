@@ -228,3 +228,10 @@ main .socials {
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 950px) {
+  .education,
+  .skills {
+    width: 90vw;
+  }
+}
