@@ -169,7 +169,7 @@ main .socials {
 .education,
 .skills {
   margin: 20px 20px;
-  padding: 25px 30px;
+  padding: 25px 0px;
   background-color: #fefeff; /* Light background */
   color: #1a1a1a; /* Dark text */
   border-left: 6px solid #7f5af0;
