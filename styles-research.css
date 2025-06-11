@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&family=Merriweather:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f7;
+  font-family: "Merriweather", serif;
+  line-height: 1.7;
+  padding-bottom: 3rem;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1e1e2f;
+  color: white;
+}
+
+header h2 {
+  font-size: 28px;
+  font-family: "Comic Neue", cursive;
+}
+
+nav ul {
+  display: flex;
+  gap: 29px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ddd;
+  font-size: 18px;
+  font-family: "Comic Neue", cursive;
+}
+
+nav ul li a:hover {
+  color: #cba6f7;
+  text-decoration: underline;
+}
+
+/* Responsive header */
+@media (max-width: 950px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+    margin: 0 0 0 15px; /* adjust left margin */
+    gap: 10px;
+  }
+}
+
+/* Research section */
+.research-section {
+  max-width: 900px;
+  margin: 1.5rem auto;
+  padding: 0 1.5rem;
+}
+
+.research-section h1 {
+  font-size: 26px;
+  border-bottom: 2px solid #444;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  color: #222;
+}
+
+.research-item {
+  background-color: #ffffff;
+  border-left: 5px solid #6a5acd;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.research-item h2 {
+  margin-bottom: 0.5rem;
+  color: #2c2c54;
+  font-size: 22px;
+}
+
+.research-item p {
+  margin: 0.3rem 0;
+  color: #333;
+  font-size: 15px;
+}
+
+.research-item ul {
+  margin-top: 0.5rem;
+  margin-left: 1.2rem;
+}
+
+.research-item ul li {
+  margin-bottom: 0.5rem;
+  font-size: 15px;
+}
+
+.research-item ul li strong {
+  display: block;
+  margin-top: 0.5rem; /* or adjust as needed */
+}
+
+a {
+  color: #005ecb;
+  text-decoration: none;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 15px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.DOI {
+  margin-top: 20px;
+}

@@ -1,70 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 * {
-  margin: 8px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Comic Neue";
 }
 
 body {
-  background-color: rgb(248, 244, 255);
-  /* height: 100vh; */
+  background-color: #f2f2f7;
+  font-family: "Comic Neue", serif;
+  line-height: 1.7;
+  padding-bottom: 3rem;
 }
 
+/* Header styles */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1e1e2f;
+  color: white;
 }
 
 header h2 {
-  font-size: 30px;
-  /* color: purple; */
+  font-size: 28px;
+  font-family: "Comic Neue", cursive;
 }
 
 nav ul {
   display: flex;
-  gap: 30px;
-  margin-right: 35px;
+  gap: 29px;
 }
 
 nav ul li {
   list-style: none;
-  font-size: 21px;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: black;
+  color: #ddd;
+  font-size: 18px;
+  font-family: "Comic Neue", cursive;
 }
 
 nav ul li a:hover {
-  color: purple;
-  cursor: pointer;
+  color: #cba6f7;
   text-decoration: underline;
 }
 
+/* Responsive header */
 @media (max-width: 950px) {
   header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0px;
   }
 
   nav ul {
     flex-direction: column;
-    gap: 2px;
-    margin: 0 0 0 7px; /* adjust left margin */
-    padding: 0;
-  }
-
-  nav ul li {
-    font-size: 18px;
-  }
-
-  header h2 {
-    margin-left: 15px;
+    margin-top: 10px;
+    margin: 0 0 0 15px; /* adjust left margin */
+    gap: 10px;
   }
 }
 

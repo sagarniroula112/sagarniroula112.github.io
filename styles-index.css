@@ -25,7 +25,7 @@ header h2 {
 
 nav ul {
   display: flex;
-  gap: 30px;
+  gap: 19px;
   margin-right: 35px;
 }
 
@@ -55,7 +55,7 @@ nav ul li a:hover {
   nav ul {
     flex-direction: column;
     gap: 2px;
-    margin: 0 0 0 7px; /* adjust left margin */
+    margin: 0 0 0 0px; /* adjust left margin */
     padding: 0;
   }
 
@@ -64,7 +64,7 @@ nav ul li a:hover {
   }
 
   header h2 {
-    margin-left: 15px;
+    margin-left: 5px;
   }
 
   .image {
@@ -127,7 +127,7 @@ main .socials {
     height: auto;
     width: 80%;
     max-width: 300px;
-    border-radius: 50%;
+    border-radius: 39%;
   }
 
   main.index-main .intro {
@@ -164,3 +164,67 @@ main .socials {
 }
 
 /* hamburger */
+
+/* // SKILLS */
+.education,
+.skills {
+  margin: 20px 20px;
+  padding: 25px 30px;
+  background-color: #fefeff; /* Light background */
+  color: #1a1a1a; /* Dark text */
+  border-left: 6px solid #7f5af0;
+  border-radius: 8px;
+  font-family: "Courier New", Courier, monospace;
+  box-shadow: 0 5px 15px rgba(127, 90, 240, 0.1);
+  width: 75vw;
+}
+
+.education h2,
+.skills h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #7f5af0;
+  position: relative;
+}
+
+.education h2::before,
+.skills h2::before {
+  content: ">> ";
+  color: #2cb67d;
+}
+
+.education ul,
+.skills ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.education li::before,
+.skills li::before {
+  content: "🧠 ";
+  margin-right: 8px;
+}
+
+.education li,
+.skills li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  background: #f4f4ff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.education li:hover,
+.skills li:hover {
+  background: #e7e7fb;
+  cursor: default;
+}
+
+.additional-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
